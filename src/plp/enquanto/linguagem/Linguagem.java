@@ -73,11 +73,15 @@ public interface Linguagem {
 		for(Bool bool:bools){
 			if(bool.getValor()){
 			comandos.get(i).execute();
-			return;
 			}
 		i++;
 		}
+		if(comandos.size()==i+1)
 		comandos.get(i).execute();
+		else{
+		Skip skip = new Skip();
+		skip.execute();
+		}
 	}
 }
 	

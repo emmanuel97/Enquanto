@@ -29,7 +29,7 @@ public class Principal {
 				+ "se i=1 xor i=4 entao escreva (i^2)"
 				+ " senaose i=3 ou i=5 entao escreva (i*10)/2"
 				+ " senaose i=2 ou i=6 entao escreva (i*10) "
-				+ "senao escreva i+10}";
+				+ "}";
 		/*String programa = "i:=0; soma:=0; b:=14;"
 				+ "para i de 1 ate b faca "
 				+ "soma:= soma+2; "

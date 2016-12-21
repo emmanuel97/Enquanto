@@ -293,9 +293,9 @@ public class EnquantoParser extends Parser {
 	public final ComandoContext comando() throws RecognitionException {
 		ComandoContext _localctx = new ComandoContext(_ctx, getState());
 		enterRule(_localctx, 4, RULE_comando);
-		int _la;
 		try {
-			setState(63);
+			int _alt;
+			setState(64);
 			switch (_input.LA(1)) {
 			case ID:
 				_localctx = new AtribuicaoContext(_localctx);
@@ -323,71 +323,80 @@ public class EnquantoParser extends Parser {
 				setState(27); comando();
 				setState(35);
 				_errHandler.sync(this);
-				_la = _input.LA(1);
-				while (_la==T__12) {
-					{
-					{
-					setState(28); match(T__12);
-					setState(29); bool(0);
-					setState(30); match(T__17);
-					setState(31); comando();
-					}
+				_alt = getInterpreter().adaptivePredict(_input,1,_ctx);
+				while ( _alt!=2 && _alt!=org.antlr.v4.runtime.atn.ATN.INVALID_ALT_NUMBER ) {
+					if ( _alt==1 ) {
+						{
+						{
+						setState(28); match(T__12);
+						setState(29); bool(0);
+						setState(30); match(T__17);
+						setState(31); comando();
+						}
+						} 
 					}
 					setState(37);
 					_errHandler.sync(this);
-					_la = _input.LA(1);
+					_alt = getInterpreter().adaptivePredict(_input,1,_ctx);
 				}
-				setState(38); match(T__11);
-				setState(39); comando();
+				setState(40);
+				switch ( getInterpreter().adaptivePredict(_input,2,_ctx) ) {
+				case 1:
+					{
+					setState(38); match(T__11);
+					setState(39); comando();
+					}
+					break;
+				}
 				}
 				break;
 			case T__4:
 				_localctx = new EnquantoContext(_localctx);
 				enterOuterAlt(_localctx, 4);
 				{
-				setState(41); match(T__4);
-				setState(42); bool(0);
-				setState(43); match(T__27);
-				setState(44); comando();
+				setState(42); match(T__4);
+				setState(43); bool(0);
+				setState(44); match(T__27);
+				setState(45); comando();
 				}
 				break;
 			case T__18:
 				_localctx = new ParaContext(_localctx);
 				enterOuterAlt(_localctx, 5);
 				{
-				setState(46); match(T__18);
-				setState(47); match(ID);
-				setState(48); match(T__23);
-				setState(49); expressao(0);
-				setState(50); match(T__26);
-				setState(51); expressao(0);
-				setState(52); match(T__27);
-				setState(53); comando();
+				setState(47); match(T__18);
+				setState(48); match(ID);
+				setState(49); match(T__23);
+				setState(50); expressao(0);
+				setState(51); match(T__26);
+				setState(52); expressao(0);
+				setState(53); match(T__27);
+				setState(54); comando();
 				}
 				break;
 			case T__15:
 				_localctx = new ExibaContext(_localctx);
 				enterOuterAlt(_localctx, 6);
 				{
-				setState(55); match(T__15);
-				setState(56); match(Texto);
+				setState(56); match(T__15);
+				setState(57); match(Texto);
 				}
 				break;
 			case T__7:
 				_localctx = new EscrevaContext(_localctx);
 				enterOuterAlt(_localctx, 7);
 				{
-				setState(57); match(T__7);
-				setState(58); expressao(0);
+				setState(58); match(T__7);
+				setState(59); expressao(0);
 				}
 				break;
 			case T__32:
 				_localctx = new BlocoContext(_localctx);
 				enterOuterAlt(_localctx, 8);
 				{
-				setState(59); match(T__32);
-				setState(60); seqComando();
-				setState(61); match(T__29);
+				setState(60); match(T__32);
+				setState(61); seqComando();
+				setState(62); match(T__29);
 				}
 				break;
 			default:
@@ -498,7 +507,7 @@ public class EnquantoParser extends Parser {
 			int _alt;
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(73);
+			setState(74);
 			switch (_input.LA(1)) {
 			case INT:
 				{
@@ -506,7 +515,7 @@ public class EnquantoParser extends Parser {
 				_ctx = _localctx;
 				_prevctx = _localctx;
 
-				setState(66); match(INT);
+				setState(67); match(INT);
 				}
 				break;
 			case T__0:
@@ -514,7 +523,7 @@ public class EnquantoParser extends Parser {
 				_localctx = new LeiaContext(_localctx);
 				_ctx = _localctx;
 				_prevctx = _localctx;
-				setState(67); match(T__0);
+				setState(68); match(T__0);
 				}
 				break;
 			case ID:
@@ -522,7 +531,7 @@ public class EnquantoParser extends Parser {
 				_localctx = new IdContext(_localctx);
 				_ctx = _localctx;
 				_prevctx = _localctx;
-				setState(68); match(ID);
+				setState(69); match(ID);
 				}
 				break;
 			case T__19:
@@ -530,81 +539,81 @@ public class EnquantoParser extends Parser {
 				_localctx = new ExpParContext(_localctx);
 				_ctx = _localctx;
 				_prevctx = _localctx;
-				setState(69); match(T__19);
-				setState(70); expressao(0);
-				setState(71); match(T__3);
+				setState(70); match(T__19);
+				setState(71); expressao(0);
+				setState(72); match(T__3);
 				}
 				break;
 			default:
 				throw new NoViableAltException(this);
 			}
 			_ctx.stop = _input.LT(-1);
-			setState(92);
+			setState(93);
 			_errHandler.sync(this);
-			_alt = getInterpreter().adaptivePredict(_input,5,_ctx);
+			_alt = getInterpreter().adaptivePredict(_input,6,_ctx);
 			while ( _alt!=2 && _alt!=org.antlr.v4.runtime.atn.ATN.INVALID_ALT_NUMBER ) {
 				if ( _alt==1 ) {
 					if ( _parseListeners!=null ) triggerExitRuleEvent();
 					_prevctx = _localctx;
 					{
-					setState(90);
-					switch ( getInterpreter().adaptivePredict(_input,4,_ctx) ) {
+					setState(91);
+					switch ( getInterpreter().adaptivePredict(_input,5,_ctx) ) {
 					case 1:
 						{
 						_localctx = new OpBinContext(new ExpressaoContext(_parentctx, _parentState));
 						pushNewRecursionContext(_localctx, _startState, RULE_expressao);
-						setState(75);
+						setState(76);
 						if (!(precpred(_ctx, 6))) throw new FailedPredicateException(this, "precpred(_ctx, 6)");
-						setState(76); match(T__16);
-						setState(77); expressao(7);
+						setState(77); match(T__16);
+						setState(78); expressao(7);
 						}
 						break;
 					case 2:
 						{
 						_localctx = new OpBinContext(new ExpressaoContext(_parentctx, _parentState));
 						pushNewRecursionContext(_localctx, _startState, RULE_expressao);
-						setState(78);
+						setState(79);
 						if (!(precpred(_ctx, 5))) throw new FailedPredicateException(this, "precpred(_ctx, 5)");
-						setState(79); match(T__2);
-						setState(80); expressao(6);
+						setState(80); match(T__2);
+						setState(81); expressao(6);
 						}
 						break;
 					case 3:
 						{
 						_localctx = new OpBinContext(new ExpressaoContext(_parentctx, _parentState));
 						pushNewRecursionContext(_localctx, _startState, RULE_expressao);
-						setState(81);
+						setState(82);
 						if (!(precpred(_ctx, 4))) throw new FailedPredicateException(this, "precpred(_ctx, 4)");
-						setState(82); match(T__1);
-						setState(83); expressao(5);
+						setState(83); match(T__1);
+						setState(84); expressao(5);
 						}
 						break;
 					case 4:
 						{
 						_localctx = new OpBinContext(new ExpressaoContext(_parentctx, _parentState));
 						pushNewRecursionContext(_localctx, _startState, RULE_expressao);
-						setState(84);
+						setState(85);
 						if (!(precpred(_ctx, 3))) throw new FailedPredicateException(this, "precpred(_ctx, 3)");
-						setState(85); match(T__33);
-						setState(86); expressao(4);
+						setState(86); match(T__33);
+						setState(87); expressao(4);
 						}
 						break;
 					case 5:
 						{
 						_localctx = new OpBinContext(new ExpressaoContext(_parentctx, _parentState));
 						pushNewRecursionContext(_localctx, _startState, RULE_expressao);
-						setState(87);
+						setState(88);
 						if (!(precpred(_ctx, 2))) throw new FailedPredicateException(this, "precpred(_ctx, 2)");
-						setState(88); match(T__28);
-						setState(89); expressao(3);
+						setState(89); match(T__28);
+						setState(90); expressao(3);
 						}
 						break;
 					}
 					} 
 				}
-				setState(94);
+				setState(95);
 				_errHandler.sync(this);
-				_alt = getInterpreter().adaptivePredict(_input,5,_ctx);
+				_alt = getInterpreter().adaptivePredict(_input,6,_ctx);
 			}
 			}
 		}
@@ -754,16 +763,16 @@ public class EnquantoParser extends Parser {
 			int _alt;
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(119);
-			switch ( getInterpreter().adaptivePredict(_input,6,_ctx) ) {
+			setState(120);
+			switch ( getInterpreter().adaptivePredict(_input,7,_ctx) ) {
 			case 1:
 				{
 				_localctx = new NaoLogicoContext(_localctx);
 				_ctx = _localctx;
 				_prevctx = _localctx;
 
-				setState(96); match(T__22);
-				setState(97); bool(5);
+				setState(97); match(T__22);
+				setState(98); bool(5);
 				}
 				break;
 			case 2:
@@ -771,7 +780,7 @@ public class EnquantoParser extends Parser {
 				_localctx = new BooleanoContext(_localctx);
 				_ctx = _localctx;
 				_prevctx = _localctx;
-				setState(98);
+				setState(99);
 				_la = _input.LA(1);
 				if ( !(_la==T__21 || _la==T__14) ) {
 				_errHandler.recoverInline(this);
@@ -784,9 +793,9 @@ public class EnquantoParser extends Parser {
 				_localctx = new OpRelContext(_localctx);
 				_ctx = _localctx;
 				_prevctx = _localctx;
-				setState(99); expressao(0);
-				setState(100); match(T__30);
-				setState(101); expressao(0);
+				setState(100); expressao(0);
+				setState(101); match(T__30);
+				setState(102); expressao(0);
 				}
 				break;
 			case 4:
@@ -794,9 +803,9 @@ public class EnquantoParser extends Parser {
 				_localctx = new OpRelContext(_localctx);
 				_ctx = _localctx;
 				_prevctx = _localctx;
-				setState(103); expressao(0);
-				setState(104); match(T__24);
-				setState(105); expressao(0);
+				setState(104); expressao(0);
+				setState(105); match(T__24);
+				setState(106); expressao(0);
 				}
 				break;
 			case 5:
@@ -804,9 +813,9 @@ public class EnquantoParser extends Parser {
 				_localctx = new OpRelContext(_localctx);
 				_ctx = _localctx;
 				_prevctx = _localctx;
-				setState(107); expressao(0);
-				setState(108); match(T__10);
-				setState(109); expressao(0);
+				setState(108); expressao(0);
+				setState(109); match(T__10);
+				setState(110); expressao(0);
 				}
 				break;
 			case 6:
@@ -814,9 +823,9 @@ public class EnquantoParser extends Parser {
 				_localctx = new OpRelContext(_localctx);
 				_ctx = _localctx;
 				_prevctx = _localctx;
-				setState(111); expressao(0);
-				setState(112); match(T__6);
-				setState(113); expressao(0);
+				setState(112); expressao(0);
+				setState(113); match(T__6);
+				setState(114); expressao(0);
 				}
 				break;
 			case 7:
@@ -824,59 +833,59 @@ public class EnquantoParser extends Parser {
 				_localctx = new BoolParContext(_localctx);
 				_ctx = _localctx;
 				_prevctx = _localctx;
-				setState(115); match(T__19);
-				setState(116); bool(0);
-				setState(117); match(T__3);
+				setState(116); match(T__19);
+				setState(117); bool(0);
+				setState(118); match(T__3);
 				}
 				break;
 			}
 			_ctx.stop = _input.LT(-1);
-			setState(132);
+			setState(133);
 			_errHandler.sync(this);
-			_alt = getInterpreter().adaptivePredict(_input,8,_ctx);
+			_alt = getInterpreter().adaptivePredict(_input,9,_ctx);
 			while ( _alt!=2 && _alt!=org.antlr.v4.runtime.atn.ATN.INVALID_ALT_NUMBER ) {
 				if ( _alt==1 ) {
 					if ( _parseListeners!=null ) triggerExitRuleEvent();
 					_prevctx = _localctx;
 					{
-					setState(130);
-					switch ( getInterpreter().adaptivePredict(_input,7,_ctx) ) {
+					setState(131);
+					switch ( getInterpreter().adaptivePredict(_input,8,_ctx) ) {
 					case 1:
 						{
 						_localctx = new ELogicoContext(new BoolContext(_parentctx, _parentState));
 						pushNewRecursionContext(_localctx, _startState, RULE_bool);
-						setState(121);
+						setState(122);
 						if (!(precpred(_ctx, 4))) throw new FailedPredicateException(this, "precpred(_ctx, 4)");
-						setState(122); match(T__5);
-						setState(123); bool(5);
+						setState(123); match(T__5);
+						setState(124); bool(5);
 						}
 						break;
 					case 2:
 						{
 						_localctx = new OuLogicoContext(new BoolContext(_parentctx, _parentState));
 						pushNewRecursionContext(_localctx, _startState, RULE_bool);
-						setState(124);
+						setState(125);
 						if (!(precpred(_ctx, 3))) throw new FailedPredicateException(this, "precpred(_ctx, 3)");
-						setState(125); match(T__20);
-						setState(126); bool(4);
+						setState(126); match(T__20);
+						setState(127); bool(4);
 						}
 						break;
 					case 3:
 						{
 						_localctx = new XorLogicoContext(new BoolContext(_parentctx, _parentState));
 						pushNewRecursionContext(_localctx, _startState, RULE_bool);
-						setState(127);
+						setState(128);
 						if (!(precpred(_ctx, 2))) throw new FailedPredicateException(this, "precpred(_ctx, 2)");
-						setState(128); match(T__8);
-						setState(129); bool(3);
+						setState(129); match(T__8);
+						setState(130); bool(3);
 						}
 						break;
 					}
 					} 
 				}
-				setState(134);
+				setState(135);
 				_errHandler.sync(this);
-				_alt = getInterpreter().adaptivePredict(_input,8,_ctx);
+				_alt = getInterpreter().adaptivePredict(_input,9,_ctx);
 			}
 			}
 		}
@@ -918,43 +927,43 @@ public class EnquantoParser extends Parser {
 	}
 
 	public static final String _serializedATN =
-		"\3\u0430\ud6d1\u8206\uad2d\u4417\uaef1\u8d80\uaadd\3(\u008a\4\2\t\2\4"+
+		"\3\u0430\ud6d1\u8206\uad2d\u4417\uaef1\u8d80\uaadd\3(\u008b\4\2\t\2\4"+
 		"\3\t\3\4\4\t\4\4\5\t\5\4\6\t\6\3\2\3\2\3\3\3\3\3\3\7\3\22\n\3\f\3\16\3"+
 		"\25\13\3\3\4\3\4\3\4\3\4\3\4\3\4\3\4\3\4\3\4\3\4\3\4\3\4\3\4\7\4$\n\4"+
-		"\f\4\16\4\'\13\4\3\4\3\4\3\4\3\4\3\4\3\4\3\4\3\4\3\4\3\4\3\4\3\4\3\4\3"+
-		"\4\3\4\3\4\3\4\3\4\3\4\3\4\3\4\3\4\3\4\3\4\3\4\5\4B\n\4\3\5\3\5\3\5\3"+
-		"\5\3\5\3\5\3\5\3\5\5\5L\n\5\3\5\3\5\3\5\3\5\3\5\3\5\3\5\3\5\3\5\3\5\3"+
-		"\5\3\5\3\5\3\5\3\5\7\5]\n\5\f\5\16\5`\13\5\3\6\3\6\3\6\3\6\3\6\3\6\3\6"+
-		"\3\6\3\6\3\6\3\6\3\6\3\6\3\6\3\6\3\6\3\6\3\6\3\6\3\6\3\6\3\6\3\6\3\6\5"+
-		"\6z\n\6\3\6\3\6\3\6\3\6\3\6\3\6\3\6\3\6\3\6\7\6\u0085\n\6\f\6\16\6\u0088"+
-		"\13\6\3\6\2\4\b\n\7\2\4\6\b\n\2\3\4\2\17\17\26\26\u009e\2\f\3\2\2\2\4"+
-		"\16\3\2\2\2\6A\3\2\2\2\bK\3\2\2\2\ny\3\2\2\2\f\r\5\4\3\2\r\3\3\2\2\2\16"+
-		"\23\5\6\4\2\17\20\7\5\2\2\20\22\5\6\4\2\21\17\3\2\2\2\22\25\3\2\2\2\23"+
-		"\21\3\2\2\2\23\24\3\2\2\2\24\5\3\2\2\2\25\23\3\2\2\2\26\27\7&\2\2\27\30"+
-		"\7\13\2\2\30B\5\b\5\2\31B\7\33\2\2\32\33\7\27\2\2\33\34\5\n\6\2\34\35"+
-		"\7\23\2\2\35%\5\6\4\2\36\37\7\30\2\2\37 \5\n\6\2 !\7\23\2\2!\"\5\6\4\2"+
-		"\"$\3\2\2\2#\36\3\2\2\2$\'\3\2\2\2%#\3\2\2\2%&\3\2\2\2&(\3\2\2\2\'%\3"+
-		"\2\2\2()\7\31\2\2)*\5\6\4\2*B\3\2\2\2+,\7 \2\2,-\5\n\6\2-.\7\t\2\2./\5"+
-		"\6\4\2/B\3\2\2\2\60\61\7\22\2\2\61\62\7&\2\2\62\63\7\r\2\2\63\64\5\b\5"+
-		"\2\64\65\7\n\2\2\65\66\5\b\5\2\66\67\7\t\2\2\678\5\6\4\28B\3\2\2\29:\7"+
-		"\25\2\2:B\7\'\2\2;<\7\35\2\2<B\5\b\5\2=>\7\4\2\2>?\5\4\3\2?@\7\7\2\2@"+
-		"B\3\2\2\2A\26\3\2\2\2A\31\3\2\2\2A\32\3\2\2\2A+\3\2\2\2A\60\3\2\2\2A9"+
-		"\3\2\2\2A;\3\2\2\2A=\3\2\2\2B\7\3\2\2\2CD\b\5\1\2DL\7%\2\2EL\7$\2\2FL"+
-		"\7&\2\2GH\7\21\2\2HI\5\b\5\2IJ\7!\2\2JL\3\2\2\2KC\3\2\2\2KE\3\2\2\2KF"+
-		"\3\2\2\2KG\3\2\2\2L^\3\2\2\2MN\f\b\2\2NO\7\24\2\2O]\5\b\5\tPQ\f\7\2\2"+
-		"QR\7\"\2\2R]\5\b\5\bST\f\6\2\2TU\7#\2\2U]\5\b\5\7VW\f\5\2\2WX\7\3\2\2"+
-		"X]\5\b\5\6YZ\f\4\2\2Z[\7\b\2\2[]\5\b\5\5\\M\3\2\2\2\\P\3\2\2\2\\S\3\2"+
-		"\2\2\\V\3\2\2\2\\Y\3\2\2\2]`\3\2\2\2^\\\3\2\2\2^_\3\2\2\2_\t\3\2\2\2`"+
-		"^\3\2\2\2ab\b\6\1\2bc\7\16\2\2cz\5\n\6\7dz\t\2\2\2ef\5\b\5\2fg\7\6\2\2"+
-		"gh\5\b\5\2hz\3\2\2\2ij\5\b\5\2jk\7\f\2\2kl\5\b\5\2lz\3\2\2\2mn\5\b\5\2"+
-		"no\7\32\2\2op\5\b\5\2pz\3\2\2\2qr\5\b\5\2rs\7\36\2\2st\5\b\5\2tz\3\2\2"+
-		"\2uv\7\21\2\2vw\5\n\6\2wx\7!\2\2xz\3\2\2\2ya\3\2\2\2yd\3\2\2\2ye\3\2\2"+
-		"\2yi\3\2\2\2ym\3\2\2\2yq\3\2\2\2yu\3\2\2\2z\u0086\3\2\2\2{|\f\6\2\2|}"+
-		"\7\37\2\2}\u0085\5\n\6\7~\177\f\5\2\2\177\u0080\7\20\2\2\u0080\u0085\5"+
-		"\n\6\6\u0081\u0082\f\4\2\2\u0082\u0083\7\34\2\2\u0083\u0085\5\n\6\5\u0084"+
-		"{\3\2\2\2\u0084~\3\2\2\2\u0084\u0081\3\2\2\2\u0085\u0088\3\2\2\2\u0086"+
-		"\u0084\3\2\2\2\u0086\u0087\3\2\2\2\u0087\13\3\2\2\2\u0088\u0086\3\2\2"+
-		"\2\13\23%AK\\^y\u0084\u0086";
+		"\f\4\16\4\'\13\4\3\4\3\4\5\4+\n\4\3\4\3\4\3\4\3\4\3\4\3\4\3\4\3\4\3\4"+
+		"\3\4\3\4\3\4\3\4\3\4\3\4\3\4\3\4\3\4\3\4\3\4\3\4\3\4\5\4C\n\4\3\5\3\5"+
+		"\3\5\3\5\3\5\3\5\3\5\3\5\5\5M\n\5\3\5\3\5\3\5\3\5\3\5\3\5\3\5\3\5\3\5"+
+		"\3\5\3\5\3\5\3\5\3\5\3\5\7\5^\n\5\f\5\16\5a\13\5\3\6\3\6\3\6\3\6\3\6\3"+
+		"\6\3\6\3\6\3\6\3\6\3\6\3\6\3\6\3\6\3\6\3\6\3\6\3\6\3\6\3\6\3\6\3\6\3\6"+
+		"\3\6\5\6{\n\6\3\6\3\6\3\6\3\6\3\6\3\6\3\6\3\6\3\6\7\6\u0086\n\6\f\6\16"+
+		"\6\u0089\13\6\3\6\2\4\b\n\7\2\4\6\b\n\2\3\4\2\17\17\26\26\u00a0\2\f\3"+
+		"\2\2\2\4\16\3\2\2\2\6B\3\2\2\2\bL\3\2\2\2\nz\3\2\2\2\f\r\5\4\3\2\r\3\3"+
+		"\2\2\2\16\23\5\6\4\2\17\20\7\5\2\2\20\22\5\6\4\2\21\17\3\2\2\2\22\25\3"+
+		"\2\2\2\23\21\3\2\2\2\23\24\3\2\2\2\24\5\3\2\2\2\25\23\3\2\2\2\26\27\7"+
+		"&\2\2\27\30\7\13\2\2\30C\5\b\5\2\31C\7\33\2\2\32\33\7\27\2\2\33\34\5\n"+
+		"\6\2\34\35\7\23\2\2\35%\5\6\4\2\36\37\7\30\2\2\37 \5\n\6\2 !\7\23\2\2"+
+		"!\"\5\6\4\2\"$\3\2\2\2#\36\3\2\2\2$\'\3\2\2\2%#\3\2\2\2%&\3\2\2\2&*\3"+
+		"\2\2\2\'%\3\2\2\2()\7\31\2\2)+\5\6\4\2*(\3\2\2\2*+\3\2\2\2+C\3\2\2\2,"+
+		"-\7 \2\2-.\5\n\6\2./\7\t\2\2/\60\5\6\4\2\60C\3\2\2\2\61\62\7\22\2\2\62"+
+		"\63\7&\2\2\63\64\7\r\2\2\64\65\5\b\5\2\65\66\7\n\2\2\66\67\5\b\5\2\67"+
+		"8\7\t\2\289\5\6\4\29C\3\2\2\2:;\7\25\2\2;C\7\'\2\2<=\7\35\2\2=C\5\b\5"+
+		"\2>?\7\4\2\2?@\5\4\3\2@A\7\7\2\2AC\3\2\2\2B\26\3\2\2\2B\31\3\2\2\2B\32"+
+		"\3\2\2\2B,\3\2\2\2B\61\3\2\2\2B:\3\2\2\2B<\3\2\2\2B>\3\2\2\2C\7\3\2\2"+
+		"\2DE\b\5\1\2EM\7%\2\2FM\7$\2\2GM\7&\2\2HI\7\21\2\2IJ\5\b\5\2JK\7!\2\2"+
+		"KM\3\2\2\2LD\3\2\2\2LF\3\2\2\2LG\3\2\2\2LH\3\2\2\2M_\3\2\2\2NO\f\b\2\2"+
+		"OP\7\24\2\2P^\5\b\5\tQR\f\7\2\2RS\7\"\2\2S^\5\b\5\bTU\f\6\2\2UV\7#\2\2"+
+		"V^\5\b\5\7WX\f\5\2\2XY\7\3\2\2Y^\5\b\5\6Z[\f\4\2\2[\\\7\b\2\2\\^\5\b\5"+
+		"\5]N\3\2\2\2]Q\3\2\2\2]T\3\2\2\2]W\3\2\2\2]Z\3\2\2\2^a\3\2\2\2_]\3\2\2"+
+		"\2_`\3\2\2\2`\t\3\2\2\2a_\3\2\2\2bc\b\6\1\2cd\7\16\2\2d{\5\n\6\7e{\t\2"+
+		"\2\2fg\5\b\5\2gh\7\6\2\2hi\5\b\5\2i{\3\2\2\2jk\5\b\5\2kl\7\f\2\2lm\5\b"+
+		"\5\2m{\3\2\2\2no\5\b\5\2op\7\32\2\2pq\5\b\5\2q{\3\2\2\2rs\5\b\5\2st\7"+
+		"\36\2\2tu\5\b\5\2u{\3\2\2\2vw\7\21\2\2wx\5\n\6\2xy\7!\2\2y{\3\2\2\2zb"+
+		"\3\2\2\2ze\3\2\2\2zf\3\2\2\2zj\3\2\2\2zn\3\2\2\2zr\3\2\2\2zv\3\2\2\2{"+
+		"\u0087\3\2\2\2|}\f\6\2\2}~\7\37\2\2~\u0086\5\n\6\7\177\u0080\f\5\2\2\u0080"+
+		"\u0081\7\20\2\2\u0081\u0086\5\n\6\6\u0082\u0083\f\4\2\2\u0083\u0084\7"+
+		"\34\2\2\u0084\u0086\5\n\6\5\u0085|\3\2\2\2\u0085\177\3\2\2\2\u0085\u0082"+
+		"\3\2\2\2\u0086\u0089\3\2\2\2\u0087\u0085\3\2\2\2\u0087\u0088\3\2\2\2\u0088"+
+		"\13\3\2\2\2\u0089\u0087\3\2\2\2\f\23%*BL]_z\u0085\u0087";
 	public static final ATN _ATN =
 		new ATNDeserializer().deserialize(_serializedATN.toCharArray());
 	static {
